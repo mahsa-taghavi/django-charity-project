@@ -1,0 +1,2 @@
+# django-charity-project
+
