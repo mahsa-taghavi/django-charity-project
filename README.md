@@ -15,24 +15,24 @@ A Django project for managing user accounts, charities, and the "About Us" secti
 ```bash
 git clone https://github.com/your-username/charity-project.git
 cd charity-project/django_project
-Create a virtual environment
+Create a virtual environment:
 python -m venv venv
 # Linux/Mac
 source venv/bin/activate
 # Windows
 venv\Scripts\activate
-Install dependencies
+Install dependencies:
 pip install -r requirements.txt
-Set environment variables
+Set environment variables:
 Create a .env file and add the following (you can use .env.example as a template):
 DJANGO_SECRET_KEY=your-secret-key
 DJANGO_DEBUG=True
 DJANGO_ALLOWED_HOSTS=localhost,127.0.0.1
-Apply migrations
+Apply migrations:
 python manage.py migrate
-Run the development server
+Run the development server:
 python manage.py runserver
-🛠 Project Structure
+🛠 Project Structure:
 django_project/
 │── accounts/       # User management
 │── charities/      # Charity management
@@ -43,7 +43,7 @@ django_project/
 │── .gitignore
 │── .env.example
 │── README.md
-🧪 Running Tests
+🧪 Running Tests:
 python manage.py test
-📄 License
+📄 License:
 This project is licensed under the MIT License.
