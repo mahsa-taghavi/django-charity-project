@@ -1,72 +1,49 @@
 # Django Charity Project
 
-یک پروژه‌ی جنگو برای مدیریت حساب کاربری، خیریه‌ها و بخش "درباره ما".
+A Django project for managing user accounts, charities, and the "About Us" section.
 
-## 🚀 ویژگی‌ها
-- احراز هویت کاربران (Custom User Model)
-- API با استفاده از Django REST Framework
-- مدیریت خیریه‌ها
-- صفحات استاتیک (About Us)
-- ساختار ماژولار (اپ‌های accounts, charities, about_us)
+## 🚀 Features
+- User authentication with a Custom User Model
+- API built using Django REST Framework
+- Charity management (add, edit, delete)
+- Static pages (About Us)
+- Modular structure with apps: `accounts`, `charities`, `about_us`
 
-## 📦 نصب و اجرا
+## 📦 Installation & Running
 
-### 1. کلون کردن ریپوزیتوری
+### 1. Clone the repository
 ```bash
 git clone https://github.com/your-username/charity-project.git
 cd charity-project/django_project
-```
-
-### 2. ایجاد محیط مجازی
-```bash
+Create a virtual environment
 python -m venv venv
-source venv/bin/activate   # در لینوکس/مک
-venv\Scripts\activate      # در ویندوز
-```
-
-### 3. نصب وابستگی‌ها
-```bash
+# Linux/Mac
+source venv/bin/activate
+# Windows
+venv\Scripts\activate
+Install dependencies
 pip install -r requirements.txt
-```
-
-### 4. تنظیم متغیرهای محیطی
-یک فایل `.env` ایجاد کنید و مقادیر زیر را وارد کنید (می‌توانید از `.env.example` استفاده کنید):
-```env
+Set environment variables
+Create a .env file and add the following (you can use .env.example as a template):
 DJANGO_SECRET_KEY=your-secret-key
 DJANGO_DEBUG=True
 DJANGO_ALLOWED_HOSTS=localhost,127.0.0.1
-```
-
-### 5. اجرای مهاجرت‌ها
-```bash
+Apply migrations
 python manage.py migrate
-```
-
-### 6. اجرای سرور توسعه
-```bash
+Run the development server
 python manage.py runserver
-```
-
-## 🛠 ساختار پروژه
-```
+🛠 Project Structure
 django_project/
-│── accounts/       # مدیریت کاربران
-│── charities/      # مدیریت خیریه‌ها
-│── about_us/       # صفحه درباره ما
-│── charity/        # تنظیمات اصلی پروژه
+│── accounts/       # User management
+│── charities/      # Charity management
+│── about_us/       # About Us page
+│── charity/        # Main project settings
 │── manage.py
 │── requirements.txt
 │── .gitignore
 │── .env.example
 │── README.md
-```
-
-## 🧪 تست
-```bash
+🧪 Running Tests
 python manage.py test
-```
-
-## 📄 لایسنس
-این پروژه تحت مجوز MIT منتشر شده است.
-# django-charity-project
-
+📄 License
+This project is licensed under the MIT License.
